@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:id="@+id/tv_email"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:hint="Mot de passe"
+                android:id="@+id/tv_password"
+                android:imeOptions="actionUnspecified"
+                android:imeActionLabel="Login"
+                android:imeActionId="@+id/login"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_login"
+                android:textStyle="bold"
+                android:text="CONNEXION"
+                android:layout_marginTop="16dp"
+                style="?android:textAppearanceSmall"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
